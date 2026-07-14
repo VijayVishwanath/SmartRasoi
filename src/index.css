@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Lora", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-saffron-50: #FDFBF7;
+  --color-saffron-100: #F2EDE4;
+  --color-saffron-200: #E5E1D8;
+  --color-saffron-500: #D46A43;
+  --color-saffron-600: #B54E28;
+  --color-saffron-700: #8C3B1C;
+  
+  --color-cardamom-50: #F9F6F0;
+  --color-cardamom-100: #E5E1D8;
+  --color-cardamom-200: #C3CDC3;
+  --color-cardamom-500: #7B8F7B;
+  --color-cardamom-600: #5F735F;
+  --color-cardamom-700: #4B5A4B;
+  
+  --color-turmeric-50: #FDFBF7;
+  --color-turmeric-100: #F2EDE4;
+  --color-turmeric-500: #D46A43;
+  --color-turmeric-600: #7B8F7B;
+
+  --color-gray-900: #2D2A26;
+  --color-gray-800: #2D2A26;
+  --color-gray-700: #55504A;
+  --color-gray-600: #756E65;
+  --color-gray-500: #9E978E;
+  --color-gray-400: #BDB6AD;
+  --color-gray-300: #E5E1D8;
+  --color-gray-200: #F2EDE4;
+  --color-gray-100: #F9F6F0;
+  --color-gray-50: #FDFBF7;
+}
+
+body {
+  margin: 0;
+  background-color: #FDFBF7;
+  color: #2D2A26;
+  font-family: var(--font-sans);
+}
+
+/* Custom animated gradient backgrounds or subtle pulse effects */
+.bg-warm-canvas {
+  background-color: #FDFBF7;
+  background-image: radial-gradient(rgba(123, 143, 123, 0.02) 1px, transparent 0),
+                    radial-gradient(rgba(212, 106, 67, 0.015) 1px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Soft card styling */
+.premium-shadow {
+  box-shadow: 0 4px 30px -4px rgba(123, 143, 123, 0.06), 0 2px 12px -2px rgba(212, 106, 67, 0.03);
+}
+
+.premium-card {
+  border: 1px solid rgba(123, 143, 123, 0.08);
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.premium-card:hover {
+  border-color: rgba(123, 143, 123, 0.16);
+  box-shadow: 0 10px 30px -10px rgba(123, 143, 123, 0.12);
+}
+
+/* Custom scrollbars for the lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 143, 123, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 143, 123, 0.35);
+}
